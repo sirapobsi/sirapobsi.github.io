@@ -9,17 +9,29 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <style>
+        @font-face {
+            font-family: apple;
+            src: url('apple.ttf');
+        }
+        
+        body {
+            font-family: apple;
+            background-color: #e6ffe6;
+        }
+    </style>
+
     <title>Resume</title>
 </head>
 
 <body>
 
-    <div class="w-100" style="text-align: center;background-color: #99ff99; padding: 5%;">
+    <div class="w-100 bg-success" style="text-align: center; color: white; padding: 5%;">
         <div class="row d-flex justify-content-center">
-            <h1>SIRAPOB SITHI</h1>
+            <h1><b>SIRAPOB SITHI</b></h1>
         </div>
         <div class="row d-flex justify-content-center">
-            <h4>Web Developer, Programmer</h4>
+            <h5>Web Developer, Programmer</h5>
         </div>
         <div class="row d-flex justify-content-center">
             <h5>MEWITTY SOLUTION CO.,LTD.</h5>
@@ -27,7 +39,7 @@
     </div>
     <div class="container" style="padding-top: 5%; padding-bottom: 5%;">
         <!-- BASIC INFORMATION -->
-        <div class="card" style="padding: 5%;">
+        <div class="card border-success mb-3" style="padding: 5%;">
             <div class="row">
                 <div class="col-sm">
                     <h3>BASIC INFORMATION</h3>
@@ -66,155 +78,169 @@
             </div>
         </div>
         <!-- WORK EXPERIENCE -->
-        <div class="card" style="padding: 5%; margin-top:5%;">
-            <div class="row">
-                <div class="col-sm">
-                    <h3>WORK EXPERIENCE</h3>
-                    <hr>
-                </div>
+        <div class="card border-success mb-3" style="margin-top:5%;">
+            <div class="card-header bg-success">
+                <h3><label style="color: white;">WORK EXPERIENCE</label></h3>
             </div>
-            <div class="row">
-                <div class="col-sm">
-                    <label><b>MEWITTY SOLUTION CO.,LTD.</b></label>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm">
+                        <label><b>MEWITTY SOLUTION CO.,LTD.</b></label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm" id="work">
-                    <label>15 JUNE 2019 - Current ({{ work_months }} month)</label>
+                <div class="row">
+                    <div class="col-sm" id="work">
+                        <label>15 JUNE 2019 - Current ({{ work_months }} month)</label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <label><b>Position: </b></label>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label><b>Position: </b></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <label>Web Developer</label>
+                    </div>
                 </div>
-                <div class="col-sm-9">
-                    <label>Web Developer</label>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label><b>Description: </b></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <label>Develop website by Laravel Framework for use in Property Management.</label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <label><b>Description: </b></label>
+                <hr>
+                <div class="row">
+                    <div class="col-sm">
+                        <label><b>CS Loxinfo</b></label>
+                    </div>
                 </div>
-                <div class="col-sm-9">
-                    <label>Develop website by Laravel Framework for use in Property Management.</label>
+                <div class="row">
+                    <div class="col-sm">
+                        <label>JUNE 2018 - November 2018 (6 month)</label>
+                    </div>
                 </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm">
-                    <label><b>CS Loxinfo</b></label>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label><b>Position: </b></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <label>Programmer (Cooperative Education)</label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <label>JUNE 2018 - November 2018 (6 month)</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <label><b>Position: </b></label>
-                </div>
-                <div class="col-sm-9">
-                    <label>Programmer (Cooperative Education)</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <label><b>Description: </b></label>
-                </div>
-                <div class="col-sm-9">
-                    <label>Develop website and application for use within the company.</label>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label><b>Description: </b></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <label>Develop website and application for use within the company.</label>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- SKILL -->
-        <div class="card" style="padding: 5%; margin-top:5%;">
-            <div class="row">
-                <div class="col-sm">
-                    <h3>SKILLS</h3>
-                    <hr>
-                </div>
+        <div class="card border-success mb-3" style="margin-top:5%;">
+            <div class="card-header bg-success">
+                <h3><label style="color: white;">SKILLS</label></h3>
             </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <label><b>Programing Language: </b></label>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label><b>Programing Language: </b></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <label>PHP, JavaScript, Python, C++</label>
+                    </div>
                 </div>
-                <div class="col-sm-9">
-                    <label>PHP, JavaScript, Python, C++</label>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label><b>Frontend: </b></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <label>HTML, CSS, Vue.js, Bootstrap</label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <label><b>Frontend: </b></label>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label><b>Backend: </b></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <label>Laravel Framework, Ionic Framework</label>
+                    </div>
                 </div>
-                <div class="col-sm-9">
-                    <label>HTML, CSS, Vue.js, Bootstrap</label>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label><b>Database: </b></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <label>MySQL, PostgreSQL, MongoDB, DynamoDB</label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <label><b>Backend: </b></label>
-                </div>
-                <div class="col-sm-9">
-                    <label>Laravel Framework, Ionic Framework</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <label><b>Database: </b></label>
-                </div>
-                <div class="col-sm-9">
-                    <label>MySQL, PostgreSQL, MongoDB, DynamoDB</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <label><b>Development Tools: </b></label>
-                </div>
-                <div class="col-sm-9">
-                    <label>Sublime Text, Microsoft Visual Studio, Commandline Terminal, MySQL Workbench, Postman, Android Studio</label>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label><b>Development Tools: </b></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <label>Sublime Text, Microsoft Visual Studio, Commandline Terminal, MySQL Workbench, Postman, Android Studio</label>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- EDUCATION -->
-        <div class="card" style="padding: 5%; margin-top:5%;">
-            <div class="row">
-                <div class="col-sm">
-                    <h3>EDUCATION</h3>
-                    <hr>
+        <div class="card border-success mb-3" style="margin-top: 5%;margin-bottom: 5%;">
+            <div class="card-header bg-success">
+                <h3><label style="color: white;">EDUCATION</label></h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm">
+                        <label><b>Bachelor of Science in Computer Science</b></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <label>Chiang Mai University, Thailand</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <label>2015-2019</label>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm">
+                        <label><b>High School</b></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <label>Taweethapisek, Thailand</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <label>2009-2015</label>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm">
-                    <label><b>Bachelor of Science in Computer Science</b></label>
-                </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-4"></div>
+            <div class="col-sm">
+                <a href="https://www.linkedin.com/in/sirapob-sithi/"><img src="https://img.icons8.com/color/64/000000/linkedin.png"></a>
             </div>
-            <div class="row">
-                <div class="col-sm">
-                    <label>Chiang Mai University, Thailand</label>
-                </div>
+            <div class="col-sm">
+                <a href="https://www.facebook.com/palmsii"><img src="https://img.icons8.com/color/64/000000/facebook.png"></a>
             </div>
-            <div class="row">
-                <div class="col-sm">
-                    <label>2015-2019</label>
-                </div>
+            <div class="col-sm">
+                <a href="https://twitter.com/Palmpob"><img src="https://img.icons8.com/color/64/000000/twitter.png"></a>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm">
-                    <label><b>High School</b></label>
-                </div>
+            <div class="col-sm">
+                <a href="https://www.instagram.com/palmsi_life/"><img src="https://img.icons8.com/color/64/000000/instagram-new.png"></a>
             </div>
-            <div class="row">
-                <div class="col-sm">
-                    <label>Taweethapisek, Thailand</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <label>2009-2015</label>
-                </div>
-            </div>
+            <div class="col-sm-4"></div>
+
         </div>
 
         <!-- MOMENT -->
