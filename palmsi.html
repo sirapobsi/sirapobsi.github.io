@@ -85,12 +85,40 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm">
+                        <label><b>i-App Creation Co., Ltd.</b></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm" id="work">
+                        <label>2 December 2019 - Current ({{ work_months }} month)</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label><b>Position: </b></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <label>iOS Developer</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label><b>Description: </b></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <label>-</label>
+                    </div>
+                </div>
+                <!-- ========================================== -->
+                <hr>
+                <div class="row">
+                    <div class="col-sm">
                         <label><b>MEWITTY SOLUTION CO.,LTD.</b></label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm" id="work">
-                        <label>15 June 2019 - Current ({{ work_months }} month)</label>
+                        <label>15 June 2019 - 29 November 2019 (6 month)</label>
                     </div>
                 </div>
                 <div class="row">
@@ -260,7 +288,7 @@
 <!-- JAVASCRIPT -->
 <script>
     var now = moment(new Date()); //todays date
-    var end = moment("2019-06-15"); // another date
+    var end = moment("2019-12-02"); // another date
     var duration = moment.duration(now.diff(end));
     var work_months = duration.asMonths();
     work_months = Math.floor(work_months);
